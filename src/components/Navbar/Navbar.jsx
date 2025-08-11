@@ -62,7 +62,7 @@ function Navbar() {
       {/* container */}
     </div>
     {/* top-bar */}
-<div className="container-fluid bg-white sticky-top">
+<div className="container-fluid bg-white">
   <div className="row">
     <div className="col-12 justify-content-between align-items-center text-center d-none d-lg-block demo" style={{borderBottom: '2px solid #3168ffea'}}>
       <a className="navbar-brand" href="index.php">University of Democracy</a>
