@@ -4,6 +4,8 @@ import React from 'react'
 function Banner() {
   return (
    <>
+
+{/*Hero Section ======================*/}
 <section className="section-hero margin-top-style-2">
   <div className="swiper heroSwiper">
     <div className="swiper-wrapper">					
@@ -15,7 +17,7 @@ function Banner() {
               <div className="row">
                 <div className="col-lg-8 offset-lg-2">
                   <div className="hero-inner-text d-flex flex-column gap-20 gap-lg-30 position-relative text-lg-center align-items-lg-center">									
-                    <h1 className="mb-0 hero-heading">Vote for Vision, Not Just a Candidate</h1>
+                    <h1 className="mb-0 hero-heading">Cast Your Vote for the Finest Candidates</h1>
                     <p className="mb-0 mb-xxl-30 fs-5 hero-text">We fight for our citizen rights, so join us and make our country more beautiful &amp; natural for all our citizen.</p>
                     <div>
                       <a href="#campaign" className="btn btn-primary btn-lg">Join The Campaign</a>
@@ -42,7 +44,7 @@ function Banner() {
         <div className="hero-4 text-bg-dark position-relative" data-bs-theme="dark">		
           <div className="video-bg video-bg-overlay">		
             <video muted loop autoPlay>						
-              <source src="assets/videos/video.mp4" type="video/mp4" />
+              <source src="videos/video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>					
             <div className="hero-wrapper">						
@@ -50,7 +52,7 @@ function Banner() {
                 <div className="row">
                   <div className="col-lg-8 offset-lg-2">
                     <div className="hero-inner-text d-flex flex-column gap-20 gap-lg-30 position-relative text-lg-center align-items-lg-center">									
-                      <h2 className="mb-0 hero-heading">Vote for Vision, Not Just a Candidate</h2>
+                      <h2 className="mb-0 hero-heading">Cast Your Vote for the Finest Candidates</h2>
                       <p className="mb-0 mb-xxl-30 fs-5 hero-text">We fight for our citizen rights, so join us and make our country more beautiful &amp; natural for all our citizen.</p>
                       <div className="hero-button">
                         <a href="#campaign" className="btn btn-primary btn-lg">Join The Campaign</a>
@@ -74,6 +76,7 @@ function Banner() {
   </div>
   {/* heroSwiper */}
 </section>
+
 
 
    

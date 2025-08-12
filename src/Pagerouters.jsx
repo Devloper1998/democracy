@@ -5,7 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 const Home = lazy(() => import("./pages/HomeScreen/Home"));
-// const Aboutus = lazy(() => import("./Pages/AboutUs/Aboutus"));
+const Aboutpeople = lazy(() => import("./pages/PeopleProject/Project"));
 // const Gallery = lazy(() => import("./Pages/Gallery/Gallery"));
 // const Category = lazy(() => import("./Pages/Category-Bussiness/Category"));
 
@@ -16,7 +16,7 @@ const Pagerouters = () => {
    
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/Tluk-Origin" element={<OurMission />} /> */}
+        <Route path="/People-Project" element={<Aboutpeople />} />
         {/* <Route path="/gallery" element={<Gallery />} />
         <Route path="/Tluk-Origin" element={<Aboutus />} />
         <Route path="/Contact-Us" element={<Contact />} />

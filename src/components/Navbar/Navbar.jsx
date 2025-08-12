@@ -1,5 +1,6 @@
 // src\components\Navbar\Navbar.jsx
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -7,7 +8,7 @@ function Navbar() {
 <div>
   {/*Header Section ======================*/}
   <header className="section-header header-2 sticky-navbar">
-    <div className="top-bar bg-secondary text-bg-dark py-3 d-none d-xl-block" data-bs-theme="dark">
+    <div className="top-bar bg-secondary text-bg-dark p-2 d-none d-xl-block" data-bs-theme="dark">
       <div className="container">						
         <div className="row g-20 align-items-center justify-content-between">
           <div className="col-lg-9">
@@ -37,11 +38,11 @@ function Navbar() {
           <div className="col-lg-3">
             <div className="d-flex align-items-center justify-content-lg-end gap-10 social-icons text-white">
               <p className="mb-0 fw-medium">Follow Us:</p>
-              <a href="#" className="text-decoration-none" aria-label="social-icon">
+              <NavLink to="" className="text-decoration-none" aria-label="social-icon">
                 <span className="facebook-icon">											
                   <svg width={5} height={10}><use xlinkHref="#facebook-icon" /></svg> 
                 </span>
-              </a>
+              </NavLink>
               <a href="#" className="text-decoration-none" aria-label="social-icon">
                 <span className="twitter-icon">											
                   <svg width={11} height={9}><use xlinkHref="#twitter-icon" /></svg> 
@@ -64,12 +65,13 @@ function Navbar() {
     {/* top-bar */}
 <div className="container-fluid bg-white">
   <div className="row">
-    <div className="col-12 justify-content-between align-items-center text-center d-none d-lg-block demo" style={{borderBottom: '2px solid #3168ffea'}}>
+    <div className="col-12 justify-content-between align-items-center text-center d-none d-lg-block demo">
       <a className="navbar-brand" href="index.php">University of Democracy</a>
       <p>(Unifying Wisdom for a Better Democracy)</p>
     </div>
     <div className="col-12 justify-content-between align-items-center text-center d-block d-lg-none p-0">
       <a className="navbar-brand p-0 m-0" href="index.php">University of Democracy</a>
+      <p>(Unifying Wisdom for a Better Democracy)</p>
     </div>
   </div>
 </div>
@@ -91,18 +93,18 @@ function Navbar() {
         <div className="collapse navbar-collapse">	
           <ul className="navbar-nav gap-30 gap-lg-20  flex-grow-1 align-items-xl-center">
             <li className="nav-item dropdown">
-              <a className="nav-link active d-inline-flex gap-2 align-items-center" aria-current="page" href="#" aria-label="nav-links" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link to={"/"} className="nav-link active" aria-current="page">
                 <span className="nav-title">
                   Home
                 </span>
              									
-              </a>
+              </Link>
           																	
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="index.html" aria-label="nav-links">
+              <Link to={"/People-Project"} className="nav-link"  aria-label="nav-links">
                 The People Project 																			   
-              </a>						
+              </Link>						
             </li>	
             <li className="nav-item">
               <a className="nav-link" href="about.html" aria-label="nav-links">
